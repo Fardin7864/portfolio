@@ -86,13 +86,14 @@ function App() {
   return (
     <div className=" bg-blue-800">
       <WaveAnimation />
+      {/* Navbar */}
       <div className="navbar fixed top-0 z-50">
         <div className="navbar-start z-10">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -228,9 +229,10 @@ function App() {
             <h4 className=" text-[#FFEED9] text-3xl font-bold  my-3 border-b-2 border-blue-500">
               Projects{" "}
             </h4>
-            <h4 className=" text-[#FFEED9] text-2xl mb-9  font-bold border-blue-500">
+            <h4 className=" text-[#FFEED9] text-2xl mb-9  font-bold border-blue-500 text-center px-5">
               Each project is a unique piece of development 🧩
             </h4>
+            {/* blog portal */}
             <div className="projects-grid px-20 ">
               <div className="pro pro__1 flex flex-col lg:flex-row">
                 <div className="pro__img">
@@ -238,11 +240,11 @@ function App() {
                     <img src={blog} alt="" className="scrolling-image" />
                   </a>
                 </div>
-                <div className=" w-1/2 text-p">
+                <div className=" lg:w-1/2 text-p">
                   <h4 className=" text-[#0099ff] text-2xl font-bold text-center my-3">
                     Blog Portal{" "}
                   </h4>
-                  <p>
+                  <p className="text-justify">
                     • Developed 'Discover,' a MERN stack web application
                     facilitating blog creation, management, and discovery. •
                     Leveraged React for the frontend, Express for the backend,
@@ -294,11 +296,11 @@ function App() {
                     <img src={blood} alt="" className="scrolling-image" />
                   </a>
                 </div>
-                <div className=" w-1/2 text-p">
+                <div className=" lg:w-1/2 text-p">
                   <h4 className=" text-[#0099ff] text-2xl font-bold text-center my-3">
                     Blood Donation Platform{" "}
                   </h4>
-                  <p>
+                  <p className=" text-justify">
                     • Admin Dashboard: Successfully implemented role-based
                     access control and an intuitive admin dashboard for
                     comprehensive user management, streamlined donation request
@@ -350,11 +352,11 @@ function App() {
                     <img src={esport} alt="" className="scrolling-image" />
                   </a>
                 </div>
-                <div className=" w-1/2 text-p">
+                <div className=" lg:w-1/2 text-p">
                   <h4 className=" text-[#0099ff] text-2xl font-bold text-center my-3">
                     E-Sports Organizer{" "}
                   </h4>
-                  <p>
+                  <p className=" text-justify">
                     • Event Types: Anubis caters to diverse esports event types,
                     ensuring a personalized and smooth experience. • Unique
                     Design: The platform boasts a distinctive and responsive
@@ -398,11 +400,11 @@ function App() {
           id="contact"
           className={activeSection === "contact" ? "active " : ""}
         >
-          <div className=" py-28 flex justify-center flex-col gap-8 items-center">
+          <div className=" py-28 flex justify-center flex-col gap-8 items-center px-5">
             <h4 className=" text-[#FFEED9] text-3xl font-bold  my-3 border-b-2 border-blue-500">
               Contact{" "}
             </h4>
-            <div className=" bg-[#00008b] flex flex-col  items-center justify-center gap-3 py-8 px-36 rounded-lg">
+            <div className=" bg-[#00008b] flex flex-col  items-center justify-center gap-3 py-8 px-5 lg:px-36 rounded-lg">
               <h4 className=" text-[#FFEED9] text-xl font-bold  my-3 ">
                 You can contact me via email:{" "}
                 <a
