@@ -49,3 +49,27 @@
 .text-p {
   color: #E0F4FF;
 }
+
+.rounded-span 
+  {
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: -33px;
+    height: 19rem;
+    position: absolute;
+    right: 33px;
+    width: 19rem;
+}
+
+.rounded-img  {
+  -webkit-animation: rotate 9s linear infinite;
+  animation: rotate 9s linear infinite;
+  width: 19rem;
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+}
+}

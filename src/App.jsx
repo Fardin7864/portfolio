@@ -1,5 +1,4 @@
 import WaveAnimation from "./components/Wave/Wave";
-import Navbar from "./components/Navbar/Navbar";
 import { FaHandsClapping } from "react-icons/fa6";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Name from "./components/Name/Name";
@@ -14,8 +13,11 @@ import nextjs from "../src/assets/nextjs.svg";
 import node from "../src/assets/node.svg";
 import mui from "../src/assets/mui.png";
 import mongoose from "../src/assets/mongoose.svg";
+import fardin from "../src/assets/pc.jpg";
+import developer from "../src/assets/working-emoji.c5325f52b5be329995a5.png";
+import frontend from "../src/assets/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg";
+
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -36,10 +38,30 @@ function App() {
 
   const navlink = (
     <>
-      <li className=" btn bg-transparent border-none text-p navLink" onClick={() => handleNavClick("home")}>Home</li>
-      <li className=" btn bg-transparent border-none text-p navLink" onClick={() => handleNavClick("projects")}>Projects</li>
-      <li className=" btn bg-transparent border-none text-p navLink" onClick={() => handleNavClick("about")}>About</li>
-      <li className=" btn bg-transparent border-none text-p navLink" onClick={() => handleNavClick("contact")}>Contact</li>
+      <li
+        className=" btn bg-transparent border-none text-p navLink"
+        onClick={() => handleNavClick("home")}
+      >
+        Home
+      </li>
+      <li
+        className=" btn bg-transparent border-none text-p navLink"
+        onClick={() => handleNavClick("projects")}
+      >
+        Projects
+      </li>
+      <li
+        className=" btn bg-transparent border-none text-p navLink"
+        onClick={() => handleNavClick("about")}
+      >
+        About
+      </li>
+      <li
+        className=" btn bg-transparent border-none text-p navLink"
+        onClick={() => handleNavClick("contact")}
+      >
+        Contact
+      </li>
     </>
   );
 
@@ -97,70 +119,118 @@ function App() {
           </ul>
         </div>
       </div>
-      <div className=" mt-28">
-      <section id="home" className={activeSection === 'home' ? 'active' : ''}>
-      <div className=" z-30 relative w-full mx-auto">
-        <div className=" relative top-16 z-40 flex justify-center gap-8">
-          <div className=" w-1/2 ">
-            <h1 className=" text-3xl font-extrabold text-blue-900">
-              Hi,
-              <br />
-              <span className=" text-[#FFEED9] text-4xl clear-left flex gap-5">
-                <span className=" text-3xl text-[#E0F4FF]">I'm </span>{" "}
-                <Name speed="100" message="Fardin Hasan" />
-              </span>
-              {/* <Name/> */}
-            </h1>
+      <div className=" lg:mt-28 mt-10">
+        <section id="home" className={activeSection === "home" ? "active" : ""}>
+          <div className=" z-30 relative w-full mx-auto">
+            <div className=" relative lg:top-16 z-40 flex flex-col p-6 lg:flex-row justify-center gap-8">
+              <div className=" lg:w-1/2 ">
+                <h1 className=" text-3xl font-extrabold lg:text-blue-900 text-p">
+                  Hi,
+                  <br />
+                  <span className=" text-[#FFEED9] text-xl lg:text-4xl clear-left flex gap-5">
+                    <span className=" text-xl lg:text-3xl text-[#E0F4FF]">
+                      I'm{" "}
+                    </span>{" "}
+                    <Name speed="100" message="Fardin Hasan" />
+                  </span>
+                </h1>
 
-            <h2 className=" mt-4 font-extrabold text-4xl text-white flex gap-5">
-              Front-End{" "}
-              <span className=" flex gap-3 items-center ">
-                {" "}
-                Developer <FaHandsClapping className="text-[#FFEED9]" />
-              </span>
-            </h2>
-            <p className=" mt-4 text-[#FFEED9] z-40">
-              <Name
-                speed="0"
-                message={`Hello, this is Fardin Code Ninja with a MERN of Steel! 🚀 Crafting web magic with MongoDB, Express, React, and Node.js. Turning caffeine into code and bugs into features. Let's create websites that are so good, even my coffee gets jealous! ☕💻`}
-              />
-              <span className=" flex gap-4 mt-3 w-1/2 justify-center ">
-                {buttons}
-              </span>
-            </p>
+                <h2 className=" mt-4 font-extrabold lg:text-4xl text-white flex gap-5">
+                  Front-End{" "}
+                  <span className=" flex gap-3 items-center ">
+                    {" "}
+                    Developer <FaHandsClapping className="text-[#FFEED9]" />
+                  </span>
+                </h2>
+                <p className=" mt-4 text-[#FFEED9] z-40">
+                  <Name
+                    speed="0"
+                    message={`Hello, this is Fardin Code Ninja with a MERN of Steel! 🚀 Crafting web magic with MongoDB, Express, React, and Node.js. Turning caffeine into code and bugs into features. Let's create websites that are so good, even my coffee gets jealous! ☕💻`}
+                  />
+                  <span className=" flex gap-4 mt-3 w-1/2 justify-center ">
+                    {buttons}
+                  </span>
+                </p>
+              </div>
+              <div className=" hero-img"></div>
+            </div>
+            <div className=" mt-24 w-full flex justify-center items-center gap-14 px-5">
+              <h4 className=" text-2xl font-medium text-p flex gap-9">
+                Tech Stack <span>|</span>
+              </h4>
+              <div className=" flex flex-wrap items-center justify-center gap-4">
+                <img src={html} alt="" className=" w-10 h-10" />
+                <img src={css} alt="" className=" w-10 h-10" />
+                <img src={javascript} alt="" className=" w-10 h-10" />
+                <img src={react} alt="" className=" w-10 h-10" />
+                <img src={mongodb} alt="" className=" w-10 h-10" />
+                <img src={node} alt="" className=" w-10 h-10" />
+                <img src={express} alt="" className=" w-10 h-10" />
+                <img src={nextjs} alt="" className=" w-10 h-10" />
+                <img src={mongoose} alt="" />
+                <img src={tailwind} alt="" className=" w-10 h-10" />
+                <img src={mui} alt="" className=" w-10 h-10" />
+              </div>
+            </div>
           </div>
-          <div className=" hero-img"></div>
-        </div>
-        <div className=" mt-24 w-full flex justify-center items-center gap-14">
-          <h4 className=" text-2xl font-medium text-p flex gap-9">
-            Tech Stack <span>|</span>
+        </section>
+        <section
+          id="about"
+          className={activeSection === "about" ? "active py-36" : "py-36"}
+        >
+          <div className=" flex flex-col px-5 lg:px-0 lg:flex-row justify-center items-center gap-14">
+            <div
+              className=" bg-cover bg-no-repeat hero-overlay hero lg:w-96 h-72 rounded-xl"
+              style={{ backgroundImage: `url(${fardin})` }}
+            >
+              <div className="hero-overlay bg-gradient-to-r from-blue-500 to-blue-500 bg-opacity-10 rounded-xl"></div>
+              <img src={developer} alt="" className=" w-1/3" />
+              {/* <img src={fardin} alt="" className=" rounded-xl w-96 h-72 bg-gradient-to-r from-blue-500 to-blue-500"/> */}
+              <span className="">
+                <img src={frontend} alt="" className=" rounded-img" />
+              </span>
+            </div>
+            <div className=" lg:w-1/2">
+              <h4 className=" text-[#0099ff] text-2xl font-bold text-center my-3">
+                About Me{" "}
+              </h4>
+              <p className="text-p leading-8 text-justify">
+                As a Junior MERN stack developer with a passion for crafting
+                seamless user experiences. My toolkit includes proficiency in
+                MongoDB, Express.js, React, and Node.js. I specialize in
+                translating design concepts into responsive and visually
+                appealing web applications. 🚀 <b>Skills at a Glance:</b>
+                <em>Front-End Mastery:</em> Proficient in HTML, CSS, JavaScript,
+                React, Tailwind, Express, Nodejs, MongoDB, Mongoose, MUI and
+                Next.js .<em>User-Centric Design:</em> Dedicated to creating
+                responsive websites for an optimal user experience. Clean Code
+                Advocate: Expertise in crafting dynamic and engaging interfaces
+                through clean, optimized code. 💡<b> What Sets Me Apart:</b>
+                <em>Cutting-Edge Tech:</em> Stay updated with the latest
+                development tools and techniques.
+                <em>Collaborative Team Player:</em> Thrive in cross-functional
+                teams, contributing to outstanding web applications. Let's
+                collaborate to turn ideas into functional and visually stunning
+                web solutions!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          id="projects"
+          className={activeSection === "projects" ? "active " : ""}
+        >
+          <div className=" flex flex-col gap-8 justify-center items-center">
+          <h4 className=" text-[#FFEED9] text-3xl font-bold  my-3 border-b-2 border-blue-500">
+            Projects{" "}
           </h4>
-          <div className=" flex items-center justify-center gap-4">
-            <img src={html} alt="" className=" w-10 h-10" />
-            <img src={css} alt="" className=" w-10 h-10" />
-            <img src={javascript} alt="" className=" w-10 h-10" />
-            <img src={react} alt="" className=" w-10 h-10" />
-            <img src={mongodb} alt="" className=" w-10 h-10" />
-            <img src={node} alt="" className=" w-10 h-10" />
-            <img src={express} alt="" className=" w-10 h-10" />
-            <img src={nextjs} alt="" className=" w-10 h-10" />
-            <img src={mongoose} alt="" />
-            <img src={tailwind} alt="" className=" w-10 h-10" />
-            <img src={mui} alt="" className=" w-10 h-10" />
-          </div>
+          <h4 className=" text-[#FFEED9] text-2xl mb-9  font-bold border-blue-500">
+          Each project is a unique piece of development 🧩
+          </h4>
+
+
         </div>
-      </div>
-      </section>
-      <section id="about" className={activeSection === 'about' ? 'active pt-36' : 'pt-36'}>
-        <div className=" flex flex-col-reverse lg:flex-row justify-center gap-8 h-[800px]"> 
-          <div>
-            about photo
-          </div>
-          <div>
-            <h4 className=" text-p text-xl font-medium text-center">About Me </h4>
-          </div>
-        </div>
-      </section>
+        </section>
       </div>
     </div>
   );
