@@ -65,6 +65,11 @@ function App() {
       >
         Contact
       </li>
+      <li
+        className=" btn bg-transparent border-none text-p navLink" 
+      >
+        <a href="https://drive.google.com/file/d/1qQePgbLXqgl4UdFJkI6o0IosCZ5pPAgg/view" target="_blank">Resume</a>
+      </li>
     </>
   );
 
