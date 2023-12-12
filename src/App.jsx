@@ -268,7 +268,7 @@ function App() {
                         href="https://blog-bloom-94414.web.app/"
                         target="_blank"
                       >
-                        Live
+                        Live Site Link
                       </a>
                     </button>
                     |
@@ -288,14 +288,14 @@ function App() {
             {/* Blood donation projects */}
             <div className="projects-grid px-20 ">
               <div className="pro pro__1 undefined">
-                <div className="pro__img">
+                {/* <div className="pro__img">
                   <a
                     href="https://blood-donation-c2b2f.web.app/"
                     target="_blank"
                   >
                     <img src={blood} alt="" className="scrolling-image" />
                   </a>
-                </div>
+                </div> */}
                 <div className=" lg:w-1/2 text-p">
                   <h4 className=" text-[#0099ff] text-2xl font-bold text-center my-3">
                     Blood Donation Platform{" "}
@@ -324,7 +324,7 @@ function App() {
                         href="https://blood-donation-c2b2f.web.app/"
                         target="_blank"
                       >
-                        Live
+                        Live Site Link
                       </a>
                     </button>
                     |
@@ -338,6 +338,14 @@ function App() {
                       </a>
                     </button>
                   </div>
+                </div>
+                <div className="pro__img">
+                  <a
+                    href="https://blood-donation-c2b2f.web.app/"
+                    target="_blank"
+                  >
+                    <img src={blood} alt="" className="scrolling-image" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -376,7 +384,7 @@ function App() {
                   <div className=" flex justify-center items-center gap-9">
                     <button className=" text-blue-400 underline text-xl gap-5 flex justify-center items-center">
                       <a href="https://esports-event.web.app/" target="_blank">
-                        Live
+                        Live Site Link
                       </a>
                     </button>
                     |
