@@ -16,6 +16,9 @@ import mongoose from "../src/assets/mongoose.svg";
 import fardin from "../src/assets/pc.jpg";
 import developer from "../src/assets/working-emoji.c5325f52b5be329995a5.png";
 import frontend from "../src/assets/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg";
+import blog from "../src/assets/blog boom.png";
+import blood from "../src/assets/blood.png";
+import esport from "../src/assets/sports.png";
 
 import { useEffect, useState } from "react";
 
@@ -221,15 +224,170 @@ function App() {
           className={activeSection === "projects" ? "active " : ""}
         >
           <div className=" flex flex-col gap-8 justify-center items-center">
-          <h4 className=" text-[#FFEED9] text-3xl font-bold  my-3 border-b-2 border-blue-500">
-            Projects{" "}
-          </h4>
-          <h4 className=" text-[#FFEED9] text-2xl mb-9  font-bold border-blue-500">
-          Each project is a unique piece of development 🧩
-          </h4>
-
-
-        </div>
+            <h4 className=" text-[#FFEED9] text-3xl font-bold  my-3 border-b-2 border-blue-500">
+              Projects{" "}
+            </h4>
+            <h4 className=" text-[#FFEED9] text-2xl mb-9  font-bold border-blue-500">
+              Each project is a unique piece of development 🧩
+            </h4>
+            <div className="projects-grid px-20 ">
+              <div className="pro pro__1 flex flex-col lg:flex-row">
+                <div className="pro__img">
+                  <a href="https://blog-bloom-94414.web.app/" target="_blank">
+                    <img src={blog} alt="" className="scrolling-image" />
+                  </a>
+                </div>
+                <div className=" w-1/2 text-p">
+                  <h4 className=" text-[#0099ff] text-2xl font-bold text-center my-3">
+                    Blog Portal{" "}
+                  </h4>
+                  <p>
+                    • Developed 'Discover,' a MERN stack web application
+                    facilitating blog creation, management, and discovery. •
+                    Leveraged React for the frontend, Express for the backend,
+                    and integrated third-party packages for enhanced the best
+                    features. Implemented user authentication, Wishlist
+                    functionality, and featured blogs. • Utilized technologies
+                    including Firebase, Axios, Tailwind, and Framer Motion for
+                    seamless user experience. • Skillfully implemented
+                    responsive design principles, custom hooks, and additional
+                    features, including robust JWT authentication and
+                    user-friendly toast messages for an enhanced user
+                    experience.
+                  </p>
+                  <p className="my-2">
+                    <b>Technologies:</b> React.js, Tailwind, Firebase, Axios,
+                    JSON web token, MongoDB etc.
+                  </p>
+                  <div className=" flex justify-center items-center gap-9">
+                    <button className=" text-blue-400 underline text-xl gap-5 flex justify-center items-center">
+                      <a
+                        href="https://blog-bloom-94414.web.app/"
+                        target="_blank"
+                      >
+                        Live
+                      </a>
+                    </button>
+                    |
+                    <button className=" text-xl gap-5 flex justify-center items-center">
+                      Code:{" "}
+                      <a
+                        href="https://github.com/Fardin7864/e-portal"
+                        target="_blank"
+                      >
+                        <FaGithub className=" text-3xl" />
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Blood donation projects */}
+            <div className="projects-grid px-20 ">
+              <div className="pro pro__1 undefined">
+                <div className="pro__img">
+                  <a
+                    href="https://blood-donation-c2b2f.web.app/"
+                    target="_blank"
+                  >
+                    <img src={blood} alt="" className="scrolling-image" />
+                  </a>
+                </div>
+                <div className=" w-1/2 text-p">
+                  <h4 className=" text-[#0099ff] text-2xl font-bold text-center my-3">
+                    Blood Donation Platform{" "}
+                  </h4>
+                  <p>
+                    • Admin Dashboard: Successfully implemented role-based
+                    access control and an intuitive admin dashboard for
+                    comprehensive user management, streamlined donation request
+                    oversight, efficient content controlled. • User
+                    Authentication: We have implemented a robust system to
+                    ensure secure registration and login processes,
+                    incorporating JSON Web Tokens (JWT ) to enhance data
+                    protection and bolster overall security. • Responsive:
+                    Prioritized a seamless user experience across all size
+                    devices, including mobile and desktop. • Funding: Integrated
+                    a funding page with Stripe payment functionality, allowing
+                    users to contribute securely.
+                  </p>
+                  <p className="my-2">
+                    <b>Technologies:</b> React.js, Express, Daisy Ui, JWT,
+                    Mongoose, Stipe hook etc.
+                  </p>
+                  <div className=" flex justify-center items-center gap-9">
+                    <button className=" text-blue-400 underline text-xl gap-5 flex justify-center items-center">
+                      <a
+                        href="https://blood-donation-c2b2f.web.app/"
+                        target="_blank"
+                      >
+                        Live
+                      </a>
+                    </button>
+                    |
+                    <button className=" text-xl gap-5 flex justify-center items-center">
+                      Code:{" "}
+                      <a
+                        href="https://github.com/Fardin7864/blood-donation-project"
+                        target="_blank"
+                      >
+                        <FaGithub className=" text-3xl" />
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* E-Sports project */}
+            <div className="projects-grid px-20 ">
+              <div className="pro pro__1 undefined">
+                <div className="pro__img">
+                  <a
+                    href="https://blood-donation-c2b2f.web.app/"
+                    target="_blank"
+                  >
+                    <img src={esport} alt="" className="scrolling-image" />
+                  </a>
+                </div>
+                <div className=" w-1/2 text-p">
+                  <h4 className=" text-[#0099ff] text-2xl font-bold text-center my-3">
+                  E-Sports Organizer{" "}
+                  </h4>
+                  <p>
+                  • Event Types: Anubis caters to diverse esports event types, ensuring a personalized and smooth experience.
+• Unique Design: The platform boasts a distinctive and responsive capturing the essence of gaming events.
+• Private Routes: To ensure the Safeguard sensitive information and authenticate users with private routes.
+• Local Storage: Enhance user experience by saving and retrieving preferences using local storage on client.
+• Responsive Design: Enjoy a seamlessly responsive layout that adapts to both desktop and mobile devices.
+• AOS Animation: For the Smooth and captivating animations using the AOS package on the homepage.
+                  </p>
+                  <p className="my-2">
+                    <b>Technologies:</b> React.js, Tailwind, AOS, Framer Motion, Local Storage etc.
+                  </p>
+                  <div className=" flex justify-center items-center gap-9">
+                    <button className=" text-blue-400 underline text-xl gap-5 flex justify-center items-center">
+                      <a
+                        href="https://esports-event.web.app/"
+                        target="_blank"
+                      >
+                        Live
+                      </a>
+                    </button>
+                    |
+                    <button className=" text-xl gap-5 flex justify-center items-center">
+                      Code:{" "}
+                      <a
+                        href="https://github.com/Fardin7864/e-sports"
+                        target="_blank"
+                      >
+                        <FaGithub className=" text-3xl" />
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
