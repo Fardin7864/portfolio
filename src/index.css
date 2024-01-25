@@ -121,7 +121,7 @@
 .scrolling-image {
   width: 100%;
   height: auto;
-  transition: transform 30s ease-in-out; /* Adjust duration as needed */
+  transition: transform 15s ease-in-out; /* Adjust duration as needed */
 }
 
 .scrolling-image:hover {
